@@ -7,12 +7,15 @@ from torchvision import transforms
 from PIL import Image
 import cv2
 import numpy as np
+import sys
+sys.path.append(os.getcwd())
 
 from utils.network_loader import load_network
 from utils.util import tensor2img
 
 image_size = (960, 512)
 npy_save_as = 'png'
+resoluition_factor = 8
 
 
 def process_image(retinol_model, src_image_path, dst_image_path):
@@ -30,9 +33,15 @@ def process_image(retinol_model, src_image_path, dst_image_path):
     # img_nf = torch.Tensor(img_nf).float().permute(2, 0, 1).unsqueeze(0).cuda()
 
     image = transform_fn(image).unsqueeze(0).cuda()
+    _, _, h, w = image.shape
+    h = h // resoluition_factor * resoluition_factor
+    w = w // resoluition_factor * resoluition_factor
+    image = image[:, :, 0:h, 0:w]
 
     with torch.no_grad():
         with autocast(args.fast_eval):
+            # result = retinol_model(image)
+
             # SNRAware
             # result = retinol_model(image, img_nf)
 
@@ -49,7 +58,7 @@ if __name__ == '__main__':
     logger.info('Start Execution...')
     # parse args
     parser = argparse.ArgumentParser()
-    parser.add_argument('-w', '--weights', type=str, help='Path of weights')
+    parser.add_argument('-w', '--weights', type=str, help='Path of Retinol model weights')
     parser.add_argument('-n', '--network', type=str, help='Network Type')
     parser.add_argument('-o', '--output-dir', type=str, help='Path of the directory that saves result')
     parser.add_argument('-f', '--fast-eval', action='store_true', help='Enable fast eval based on AMP')
@@ -70,6 +79,7 @@ if __name__ == '__main__':
     os.makedirs(args.output_dir, exist_ok=True)
 
     transform_fn = transforms.Compose([
+        # transforms.CenterCrop(image_size),
         transforms.ToTensor()
     ])
 

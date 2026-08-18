@@ -5,6 +5,7 @@ import torch.utils.data
 import pyiqa
 import numpy as np
 import lpips as lpips_
+from skimage.metrics import structural_similarity
 
 class PSNR(nn.Module):
     def __init__(self, *args, **kwargs):

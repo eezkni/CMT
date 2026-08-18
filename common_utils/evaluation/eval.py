@@ -18,7 +18,7 @@ from utils.util import set_seed, tensor2img
 from utils.network_loader import load_network
 
 SEED = 1951581
-RESULT_DIR = r'THE PATH OF LOG & RESULT DIR'
+RESULT_DIR = r'/path/to/eval_result'
 USE_AMP = True
 QUANT = False
 
@@ -26,23 +26,23 @@ def get_dataset(dataset_type):
     low_dir = None
     normal_dir = None
     if dataset_type == 'LOLv2':
-        low_dir = r'THE DIR PATH OF LOLv2 LOW-LIGHT IMAGES'
-        normal_dir = r'THE DIR PATH OF LOLv2 NORMAL-LIGHT IMAGES'
+        low_dir = r'/path/to/test_data/LOLv2/low/teacher'
+        normal_dir = r'/path/to/test_data/LOLv2/normal'
 
     elif dataset_type == 'SID':
-        low_dir = r'THE DIR PATH OF SID LOW-LIGHT IMAGES'
-        normal_dir = r'THE DIR PATH OF SID NORMAL-LIGHT IMAGES'
+        low_dir = r'/path/to/test_data/SID/low/teacher'
+        normal_dir = r'/path/to/test_data/SID/normal'
 
     elif dataset_type == 'SDSD':
-        low_dir = r'THE DIR PATH OF SDSD LOW-LIGHT IMAGES'
-        normal_dir = r'THE DIR PATH OF SDSD NORMAL-LIGHT IMAGES'
+        low_dir = r'/path/to/test_data/SDSD/low/teacher'
+        normal_dir = r'/path/to/test_data/SDSD/normal'
 
     elif dataset_type == 'SMID':
-        return PairedSMIDEvalDataset(r'THE DIR PATH OF SMID IMAGES IN NPY FORMAT')
+        return PairedSMIDEvalDataset(r'/path/to/datasets/SMID')
 
     elif dataset_type == 'LSRW-Huawei':
-        low_dir = r'THE DIR PATH OF LSRW-Huawei LOW-LIGHT IMAGES'
-        normal_dir = r'THE DIR PATH OF LSRW-Huawei NORMAL-LIGHT IMAGES'
+        low_dir = r'/path/to/datasets/LSRW-Huawei/test/low'
+        normal_dir = r'/path/to/datasets/LSRW-Huawei/test/high'
 
     return PairedEvalDataset(low_dir, normal_dir)
 

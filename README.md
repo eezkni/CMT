@@ -1,6 +1,6 @@
 # Contrastive Mean Teacher for Robust Low-Light Image Enhancement
 
-#### International Journal of Computer Vision, 2026.
+#### International Journal of Computer Vision, 2026
 
 [Zhangkai Ni](https://eezkni.github.io/)<sup>1</sup>, [Menglin Han](https://scholar.google.com/citations?user=29L34-MAAAAJ&hl=zh-CN)<sup>1</sup>, [Wenhan Yang](https://scholar.google.com/citations?user=S8nAnakAAAAJ&hl=en)<sup>2</sup>, [Hanli Wang](https://scholar.google.com/citations?user=WioFu64AAAAJ&hl=zh-CN)<sup>1</sup>, [Lin Ma](https://scholar.google.com/citations?user=DAn1pA4AAAAJ&hl=zh-CN)<sup>3</sup>, [Sam Kwong](https://scholar.google.com/citations?user=_PVI6EAAAAAJ&hl=zh-CN)<sup>4</sup>
 

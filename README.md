@@ -1,5 +1,6 @@
 # Contrastive Mean Teacher for Robust Low-Light Image Enhancement
-#### IJCV, 2026
+
+#### International Journal of Computer Vision (IJCV), vol. 134, pp. 1-21, July 2026.
 
 [Zhangkai Ni](https://eezkni.github.io/)<sup>1</sup>, Menglin Han<sup>1</sup>, [Wenhan Yang](https://flyywh.github.io/)<sup>2</sup>, [Hanli Wang](https://scholar.google.com/citations?user=WioFu64AAAAJ&hl=zh-CN)<sup>1</sup>, Lin Ma<sup>3</sup>, [Sam Kwong](https://scholar.google.com/citations?user=_PVI6EAAAAAJ&hl=zh-CN)<sup>4</sup>
 
@@ -10,19 +11,12 @@ This repository provides the official implementation for the paper "Contrastive 
 ![Teaser](./readme-img/framework.png)
 
 ### Updates
-[2025-06-28] The test codes, pre-trained weights and datasets are provided in this repository.
+[2026-08-18] The training codes are updated in this repository.
+[2025-06-28] The test codes, pre-trained weights, and datasets are provided in this repository.
 [2026-07-19] CMT release version: supports 7 backbones (Restormer, NAFNet, UNet, LLFormer, RetinexFormer, MIRNetv2, CIDNet) for training on LOLv2/SID/SDSD and inference on all 5 datasets (LOLv2, SID, SDSD, SMID, LSRW-Huawei).
 
 ## About CMT
-
-Images captured under low-light conditions often suffer from complex degradations, including under-exposure, noise, and low contrast, posing significant challenges for visual enhancement. 
-Existing low-light enhancement methods, whether fully supervised or unpaired/self-supervised, exhibit distinct advantages and limitations. 
-Supervised approaches effectively suppress noise and preserve fine details but suffer from limited generalization due to heavy reliance on paired training data, which is costly to obtain and often restricted to limited scenes.
-In contrast, unpaired or self-supervised methods leverage readily available unpaired data, excelling at capturing global illumination and color distribution with better adaptability and generalization. 
-However, they typically struggle with precise color fidelity and detail restoration owing to the absence of ground-truth references.
-In this paper, we propose a unified Mean-Teacher framework that progressively integrates the complementary knowledge from paired and unpaired data to achieve enhanced illumination and color rendition alongside noise suppression. 
-Specifically, our approach enriches learning at both data and loss levels: training data are augmented via CutMix between paired and unpaired domains, and a novel risk-theory-based contrastive learning strategy is introduced to extract rich supervisory signals from mixed data regions. 
-Extensive experiments on both paired (in-domain) and unpaired (cross-domain) test sets demonstrate that our method significantly outperforms baseline models and state-of-the-art techniques.
+Images captured under low-light conditions often suffer from complex degradation, including underexposure, noise, and low contrast, posing significant challenges to visual enhancement. Existing low-light enhancement methods, whether fully supervised or unpaired/self-supervised, have distinct advantages and limitations. Supervised approaches effectively suppress noise and preserve fine details, but suffer from limited generalization owing to heavy reliance on paired training data, which are costly to obtain and often restricted to limited scenes. By contrast, unpaired or self-supervised methods leverage readily available unpaired data, excelling at capturing global illumination and color distribution with better adaptability and generalization. However, they typically struggle with precise color fidelity and detail restoration, owing to the absence of ground-truth references. In this study, we propose a unified Mean Teacher framework that progressively integrates complementary knowledge from paired and unpaired data to achieve enhanced illumination and color rendition, alongside noise suppression. Specifically, our approach enriches learning at both the data and loss levels: training data are augmented via CutMix between paired and unpaired domains, and a novel risk-theory-based contrastive learning strategy is introduced to extract rich supervisory signals from mixed data regions. Extensive experiments on both paired (in-domain) and unpaired (cross-domain) test sets demonstrate that our method significantly outperforms baseline models and state-of-the-art techniques. 
 
 **TL;DR:** We propose a novel Contrastive Mean Teacher (CMT) for robust semi-supervised low-light image enhancement, jointly learning visual priors from paired and unpaired data within a unified Mean-Teacher architecture, guided by an innovative Pixel Intermediate Contrastive Loss (PICo Loss) derived from empirical risk boundary analysis to provide richer and more effective supervision.
 

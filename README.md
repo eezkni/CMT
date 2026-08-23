@@ -9,13 +9,13 @@
 
 </h4>
 
-# Contrastive Mean Teacher for Robust Low-Light Image Enhancement
+<!-- # Contrastive Mean Teacher for Robust Low-Light Image Enhancement -->
 
-#### International Journal of Computer Vision, 2026
+<!-- #### International Journal of Computer Vision, 2026 -->
 
-[Zhangkai Ni](https://eezkni.github.io/)<sup>1</sup>, [Menglin Han](https://scholar.google.com/citations?user=29L34-MAAAAJ&hl=zh-CN)<sup>1</sup>, [Wenhan Yang](https://scholar.google.com/citations?user=S8nAnakAAAAJ&hl=en)<sup>2</sup>, [Hanli Wang](https://scholar.google.com/citations?user=WioFu64AAAAJ&hl=zh-CN)<sup>1</sup>, [Lin Ma](https://scholar.google.com/citations?user=DAn1pA4AAAAJ&hl=zh-CN)<sup>3</sup>, [Sam Kwong](https://scholar.google.com/citations?user=_PVI6EAAAAAJ&hl=zh-CN)<sup>4</sup>
+<!-- [Zhangkai Ni](https://eezkni.github.io/)<sup>1</sup>, [Menglin Han](https://scholar.google.com/citations?user=29L34-MAAAAJ&hl=zh-CN)<sup>1</sup>, [Wenhan Yang](https://scholar.google.com/citations?user=S8nAnakAAAAJ&hl=en)<sup>2</sup>, [Hanli Wang](https://scholar.google.com/citations?user=WioFu64AAAAJ&hl=zh-CN)<sup>1</sup>, [Lin Ma](https://scholar.google.com/citations?user=DAn1pA4AAAAJ&hl=zh-CN)<sup>3</sup>, [Sam Kwong](https://scholar.google.com/citations?user=_PVI6EAAAAAJ&hl=zh-CN)<sup>4</sup> -->
 
-<sup>1</sup>Tongji University, <sup>2</sup>Pengcheng Laboratory, <sup>3</sup>Meituan, <sup>4</sup>Lingnan Univerity
+<!-- <sup>1</sup>Tongji University, <sup>2</sup>Pengcheng Laboratory, <sup>3</sup>Meituan, <sup>4</sup>Lingnan Univerity -->
 
 This repository provides the official implementation for the paper "Contrastive Mean Teacher for Robust Low-Light Image Enhancement", International Journal of Computer Vision (IJCV), vol. 134, pp. 1-21, July 2026. [Paper-official](https://link.springer.com/article/10.1007/s11263-026-02928-7) 
 

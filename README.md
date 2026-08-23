@@ -19,7 +19,7 @@ International Journal of Computer Vision, 2026
 
 <!-- <sup>1</sup>Tongji University, <sup>2</sup>Pengcheng Laboratory, <sup>3</sup>Meituan, <sup>4</sup>Lingnan Univerity -->
 
-This repository provides the official implementation for the paper "Contrastive Mean Teacher for Robust Low-Light Image Enhancement", International Journal of Computer Vision (IJCV), vol. 134, pp. 1-21, July 2026. [Paper-official](https://link.springer.com/article/10.1007/s11263-026-02928-7) 
+This repository provides the official implementation for the paper "Contrastive Mean Teacher for Robust Low-Light Image Enhancement," International Journal of Computer Vision (IJCV), vol. 134, pp. 1-21, July 2026. [Paper-official](https://link.springer.com/article/10.1007/s11263-026-02928-7) 
 
 ![Teaser](./readme-img/framework.png)
 

@@ -150,7 +150,7 @@ If you find our work useful, please cite it as
   number={7},
   pages={346},
   year={2026},
-  publisher={Springer US New York}
+  ublisher={Springer}
 }
 ```
 

@@ -7,6 +7,8 @@
 
 <sup>1</sup>Tongji University, <sup>2</sup>Pengcheng Laboratory, <sup>3</sup>Meituan, <sup>4</sup>Lingnan Univerity
 
+International Journal of Computer Vision, 2026
+
 </h4>
 
 <!-- # Contrastive Mean Teacher for Robust Low-Light Image Enhancement -->

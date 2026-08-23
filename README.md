@@ -12,7 +12,9 @@ This repository provides the official implementation for the paper "Contrastive 
 
 ### Updates
 [2026-08-18] The training codes are updated in this repository.
+
 [2025-06-28] The test codes, pre-trained weights, and datasets are provided in this repository.
+
 [2026-07-19] CMT release version: supports 7 backbones (Restormer, NAFNet, UNet, LLFormer, RetinexFormer, MIRNetv2, CIDNet) for training on LOLv2/SID/SDSD and inference on all 5 datasets (LOLv2, SID, SDSD, SMID, LSRW-Huawei).
 
 ## About CMT
